@@ -2,18 +2,14 @@
   box-sizing: border-box;
 }
 
-img {
-  display: block;
-}
-
 body,
 h1,
 h2 {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+img {
+  display: block;
 }
 
 a {
@@ -35,15 +31,15 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.page-header {
+  text-align: center;
+  width: 100%;
+  height: 100%;
   background-color: #1d2126;
 }
 
 .container {
   padding: 0 15px;
+  width: 100%;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
@@ -62,48 +58,65 @@ header {
   }
 }
 
-.logo {
-  margin-right: 70px;
-  align-items: center;
-  height: 19px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 3;
-  color: #a4aead;
-}
-
-.header-nav {
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 }
 @media screen and (min-width: 480px) {
-  .header-nav {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-nav {
-    display: flex;
+  .row {
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header-nav {
+  .row {
     flex-direction: row;
-    display: flex;
   }
+}
+
+[class*=col-] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-xs-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/*md(laptop)*/
+@media (min-width: 768px) {
+  .col-md-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .col-md-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+/*sm(tablet)*/
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none;
+  }
+  .menu {
+    overflow-x: scroll;
+  }
+}
+.logo {
+  align-items: center;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   color: white;
-}
-@media screen and (max-width: 767px) {
-  .menu {
-    overflow-x: scroll;
-  }
 }
 
 .menu-link {
@@ -128,12 +141,8 @@ header {
   border: 2px solid #5b6168;
 }
 
-.menu-item + .menu-item {
-  margin-left: 35px;
-}
-
 .search-input {
-  margin-left: 70px;
+  /* margin-left: 97px; */
   padding: 7px 8px;
   width: 195px;
   height: 30px;
@@ -147,11 +156,6 @@ header {
   outline: none;
   border-radius: 2px;
   border: 2px solid #a4aead;
-}
-@media screen and (max-width: 767px) {
-  .search-input {
-    display: none;
-  }
 }
 
 .search-input:hover,
