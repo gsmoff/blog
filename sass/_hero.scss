@@ -1,0 +1,15 @@
+.hero {
+	height: 660px;
+	background-image: url("../images/hero.png");
+	background-color: #3a454d;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #3a454d;
+}
+.hero-overlay {
+    display: flex;
+	flex-direction: column;
+    padding-top: 220px;
+	
+}

@@ -27,16 +27,6 @@ ol {
   --main-font: "Open Sans", sans-serif;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background-color: #1d2126;
-}
-
 .container {
   padding: 0 15px;
   width: 100%;
@@ -56,6 +46,16 @@ header {
   .container {
     width: 1200px;
   }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1d2126;
 }
 
 .row {
@@ -161,4 +161,20 @@ header {
 .search-input:hover,
 .search-input:focus {
   border-color: #a4aead;
+}
+
+.hero {
+  height: 660px;
+  background-image: url("../images/hero.png");
+  background-color: #3a454d;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #3a454d;
+}
+
+.hero-overlay {
+  display: flex;
+  flex-direction: column;
+  padding-top: 220px;
 }/*# sourceMappingURL=style.css.map */
