@@ -135,6 +135,10 @@ header {
   color: #23b7a4;
   border: 2px solid #23b7a4;
 }
+.menu-link.current:hover {
+  color: #23b7a4;
+  border: 2px solid #23b7a4;
+}
 
 .menu-link:hover,
 .menu-link:focus {
@@ -177,4 +181,39 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 220px;
+}
+
+.hero-title {
+  font-family: "Quattrocento Sans";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.some-text {
+  font-family: "Quattrocento Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ccd0d7;
+}
+
+.hero-button {
+  font-family: "Quattrocento Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  width: 120px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: rgba(222, 180, 180, 0);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.hero-button:hover, .hero-button:focus {
+  background-color: #23b7a4;
+  border: 2px solid #23b7a4;
 }/*# sourceMappingURL=style.css.map */
